@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <style>
+        /* Estilo do corpo */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo da seta */
+        .seta {
+            font-size: 50px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo do botão */
+        .botao {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo da mensagem */
+        .mensagem {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #007bff;
+            display: none; /* Esconde a mensagem inicialmente */
+        }
+    </style>
+</head>
+<body>
+    <!-- Seta para baixo -->
+    <div class="seta">⬇️</div>
+
+    <!-- Botão que exibe a mensagem -->
+    <button class="botao" onclick="mostrarMensagem()">Clique aqui</button>
+
+    <!-- Mensagem oculta -->
+    <div class="mensagem" id="mensagem">Te amo, mãe!</div>
+
+    <script>
+        // Função para mostrar a mensagem
+        function mostrarMensagem() {
+            document.getElementById("mensagem").style.display = "block";
+        }
+    </script>
+</body>
+</html>
